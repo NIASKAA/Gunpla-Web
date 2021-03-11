@@ -12,10 +12,10 @@
         <header>
             <h1>NIASKA's Gunpla Website</h1>
             <nav>
-                <a href="About my work">About My Work</a>
-                <a href="Commissions">Commissions</a>
-                <a href="Collection">Collection</a>
-                <a href="Contact">Contact Me!</a>
+                <a href="#About my work">About My Work</a>
+                <a href="#Commissions">Commissions</a>
+                <a href="#Collection">Collection</a>
+                <a href="#Contact">Contact Me!</a>
             </nav>
         </header>
 
@@ -87,45 +87,14 @@
                     </div>
                 </div>
 
-                <script>
-                    var slideIndex = 1;
-                    showSlides(slideIndex);
+                <script src="assets/javascript/script.js"></script>
+                
+                    <div>
+                        <p>
+                         My name is NIASKA. I been in this hobby ever since I was 3-4 years old.
+                        </p>
+                    </div>
 
-                    function plusSlides(n) {
-                        showSlides(slideIndex += n);
-                    }
-
-                    function currentSlide(n) {
-                        showSlides(slideIndex = n);
-                    }
-
-                    function showSlides(n) {
-                        var i;
-                        var slides = document.getElementsByClassName("mySlides");
-                        var dots = document.getElementsByClassName("demo");
-                        var captionText = document.getElementById("caption");
-                        if (n > slides.length) {
-                            slideIndex = 1
-                        }
-                        if (n < 1) {
-                            slideIndex = slide.length
-                        }
-                        for(i = 0; i < slides.length; i++) {
-                            slides[i].style.display = "none";
-                        }
-                        for(i = 0; i < dots.length; i++) {
-                            dots[i].className = dots[i].className.replace(" active", "");
-                        }
-                        slides[slideIndex-1].style.display = "block";
-                        dots[slideIndex-1].className += " active";
-                        captionText.innerHTML = dots[slideIndex-1].alt;
-                    }
-                </script>
-                <div>
-                    <p>
-                        My name is NIASKA. I been in this hobby ever since I was 3-4 years old.
-                    </p>
-                </div>
             </section>
 
             <section class="page-section" id="commissions">

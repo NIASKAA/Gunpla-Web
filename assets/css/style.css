@@ -3,39 +3,58 @@
 }
 
 :root {
-    background-color: grey;
+    --primary: #22445a;
 }
 
 body {
     margin: 0;
     padding: 0;
-    font-family: ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: ;
-    background-color: ;
+    background-color: var(--primary);
     line-height: 1.5;
 }
 
 header {
+    padding: 15px 6% 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--primary);
+    box-shadow: 0 5px 35px;
 
 }
 
 header h1 {
-
+    color: var(--primary);
+    padding: 5px 1% 5px 6%;
+    margin: 0;
+    font-size: 4vw;
+    line-height: 1.5;
 }
 
 nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
 }
 
 nav a {
-
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-right: 10px;
 }
 
 nav a:hover {
-
+    background-size: 100% 100%;
+    color: var(--primary);
 }
 
 nav a:last-child {
+    margin-right: 0;
 
 }
 
@@ -111,27 +130,39 @@ nav a:last-child {
 }
 
 main {
-
+    margin-top: 20px;
+    margin-bottom: 45px;
 }
 
 .hero-banner {
-
 }
 
 .hero-banner div {
-
+    flex: 0 0 90%;
 }
 
 .hero-banner h2 {
-
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 2.3rem;
+    line-height: 1.5;
+    display: inline;
 }
 
 .page-wrapper {
-
+    max-width: 88%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .page-section {
-
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
 }
 
 .page-section > h2 {
@@ -147,27 +178,46 @@ main {
 }
 
 .flex-container {
-
+    display: flez;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .flex-item:hover {
-
+    background-color: var(--primary);
 }
 
 .flex-item {
-
+    border: 5px;
+    background-color: var(--primary);
+    min-height: 200px;
+    max-height: 200px;
+    flex-basis: calc(50%-1em);
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    margin: 0.5em;
+    text-decoration: none;
+    background-size: 110%;
+    transition: all 0.5s;
+    font-size: 0.9rem;
+    display: flex;
+    background-blend-mode: soft-light;
 }
 
 .flex-item div {
-
+    padding: 8px 10;
 }
 
 .flex-item h3 {
-
+    font-size: 1.6rem;
 }
 
 .contact address {
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 140%;
 }
 
 .contact address a {
@@ -179,6 +229,6 @@ main {
 }
 
 @media screen and (max-width:) {
-
+    
 }
 
